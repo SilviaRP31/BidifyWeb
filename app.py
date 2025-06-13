@@ -214,7 +214,7 @@ elif page == "Bird Sound Classifier":
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp_file:
                     tmp_file.write(uploaded_file.read())
                     tmp_path = tmp_file.name
-                time.sleep(1)
+                time.sleep(3)
             
             # Display audio player
             st.audio(uploaded_file)
